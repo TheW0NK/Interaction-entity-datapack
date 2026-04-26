@@ -1,6 +1,10 @@
 {
   "pack": {
-    "pack_format": 48,
-    "description": "Interaction Command Runner (1.21.1)"
+    "pack_format": 94,
+    "supported_formats": {
+      "min_inclusive": 94,
+      "max_inclusive": 94
+    },
+    "description": "Interaction Command Runner (1.21.11)"
   }
 }

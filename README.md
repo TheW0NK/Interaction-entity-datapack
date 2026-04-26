@@ -1,9 +1,10 @@
 # Interaction Command Runner (Data Pack)
 
+
 This datapack makes `minecraft:interaction` entities act like command runners without command blocks.
 
 ## Target version
-- Java Edition **1.21.1** (`pack_format: 48`)
+- Java Edition **1.21.11** (`pack_format: 94`)
 
 ## What it does
 When a player right-clicks an interaction entity tagged `im.command_runner`, the datapack runs the command stored in that entity's `im_command` NBT string, as the interaction entity and at its location.
@@ -32,3 +33,8 @@ Now right-click it to trigger the command.
 - The click handler picks the nearest tagged interaction entity within 6 blocks of the player.
 - `im_command` must be a valid command string **without** a leading slash.
 - Use this responsibly on multiplayer servers (players who can edit entity NBT can define arbitrary commands).
+
+
+## Packaging
+- If you zip the pack, `pack.mcmeta` and `data/` must be at the **root** of the zip.
+- Use `./build_zip.sh` from this repository to create a correctly structured archive.
